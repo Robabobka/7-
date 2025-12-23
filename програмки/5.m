@@ -11,15 +11,6 @@ plot(x_range, f(x_range), 'b-', 'LineWidth', 2);
 grid on; title('f(x) = 3 - x^2'); xlabel('x'); ylabel('f(x)');
 hold on;
 
-% Отмечаем корни
-root1 = -sqrt(3);
-root2 = sqrt(3);
-plot(root1, 0, 'ro', 'MarkerSize', 3, 'MarkerFaceColor', 'r');
-plot(root2, 0, 'ro', 'MarkerSize', 3, 'MarkerFaceColor', 'r');
-text(root1, -0.5, sprintf('x = -%.3f', root1), 'FontSize', 10, 'HorizontalAlignment', 'center');
-text(root2, -0.5, sprintf('x = %.3f', root2), 'FontSize', 10, 'HorizontalAlignment', 'center');
-hold off;
-
 % Ввод диапазона для x
 disp('--- Ввод диапазона для x ---');
 x_start = input('Начало диапазона x: ');
